@@ -1,0 +1,84 @@
+title: Missing Maps
+# copyright: OpenStreetMap US
+permalink: /:title/
+# Include "future" posts so that upcoming events will display. Posts cannot be scheduled to automatically
+# publish at a certain time with Jekyll alone.
+logo: /img/MM_white_typography.svg
+# logo_mono: /img/logo-mono.svg
+future: true
+# timezone: America/New_York
+# github: osmus/dogwood
+# mastodon: https://en.osm.town/@OpenStreetMapUS
+twitter: TheMissingMaps
+youtube_page: c/themissingmaps
+facebook: TheMissingMaps
+instagram: themissingmaps
+linkedin: company/missing-maps
+github: MissingMaps
+email: mailto:info@hotosm.org
+links:
+  - link: /contribute/
+  - link: /organize/
+  - link: /blog/
+  - link: /support/
+  - link: /stats/
+  - link: /events
+    label: Missing Maps Events
+    a_class: button bordered
+plugins:
+  - jekyll-archives
+  - jekyll-include-cache
+jekyll-archives:
+  enabled:
+    - tags
+    - month
+    - year
+  layouts:
+    tag: archives/posts-tag
+    year: archives/posts-year
+    month: archives/month
+  permalinks:
+    tag: '/tags/:name/'
+    month: '/:year/:month/'
+    year: '/:year/'
+date_format: "%b %e, %Y"
+collections:
+  feeds:
+    output: true
+  pages:
+    output: true
+  people:
+    output: true
+  posts:
+    output: true
+  redirects:
+    output: true
+defaults:
+  -
+    scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      permalink: /:path/
+      layout: "page"
+  -
+    scope:
+      path: "_redirects"
+      type: "redirects"
+    values:
+      permalink: /:path/
+      layout: "redirect"
+  -
+    scope:
+      path: "_people"
+      type: "people"
+    values:
+      layout: "person"
+  -
+    scope:
+      path: "_posts/blog"
+      type: "posts"
+    values:
+      permalink: /blog/:year/:month/:title/
+      category: "Blog"
+      layout: "post"
