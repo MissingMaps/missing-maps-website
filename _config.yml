@@ -25,23 +25,12 @@ links:
   - link: /events
     label: Missing Maps Events
     a_class: button bordered
+
+# Build settings
+theme: osmus-dogwood
 plugins:
-  - jekyll-archives
-  - jekyll-include-cache
-jekyll-archives:
-  enabled:
-    - tags
-    - month
-    - year
-  layouts:
-    tag: archives/posts-tag
-    year: archives/posts-year
-    month: archives/month
-  permalinks:
-    tag: '/tags/:name/'
-    month: '/:year/:month/'
-    year: '/:year/'
-date_format: "%b %e, %Y"
+  - jekyll-feed
+
 collections:
   feeds:
     output: true
