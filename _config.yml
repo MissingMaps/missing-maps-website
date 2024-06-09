@@ -4,7 +4,7 @@ permalink: /:title/
 # Include "future" posts so that upcoming events will display. Posts cannot be scheduled to automatically
 # publish at a certain time with Jekyll alone.
 logo: /img/MM_white_typography.svg
-# logo_mono: /img/logo-mono.svg
+logo_mono: /img/MM_white_typography.svg
 future: true
 # timezone: America/New_York
 # github: osmus/dogwood
