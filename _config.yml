@@ -7,8 +7,7 @@ logo: /img/MM_white_typography.svg
 logo_mono: /img/MM_white_typography.svg
 future: true
 # timezone: America/New_York
-# github: osmus/dogwood
-# mastodon: https://en.osm.town/@OpenStreetMapUS
+mastodon: false
 twitter: TheMissingMaps
 youtube_page: c/themissingmaps
 facebook: TheMissingMaps
