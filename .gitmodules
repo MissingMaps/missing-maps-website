@@ -1,0 +1,3 @@
+[submodule "dogwood"]
+	path = dogwood
+	url = git@github.com:osmus/dogwood.git
